@@ -1,0 +1,16 @@
+{% load static%}
+
+<div class="menu-burger">
+            <div class="menu-bar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            {% include 'base_templates/subpatterns/base_subpatterns/menu_subpattern.html' %}
+            <div class="menu-text">
+                Меню
+            </div>
+            <div class="time">
+                <span>{{site_time|date:"d-D-M"}}</span>
+            </div>
+        </div>

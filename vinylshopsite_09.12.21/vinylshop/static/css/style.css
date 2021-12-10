@@ -1,0 +1,310 @@
+@font-face {
+    font-family: ComicCAT;
+    src: url(Comic_CAT.otf);
+}
+
+body{
+    background-color: #f8f8f8;
+}
+/* БЛОК HEADER */
+.container{
+    width: 950px;
+    margin: 0px auto;
+}
+
+.header{
+    height: 130px;
+    position: relative;
+    background-image: url(../vinyl_shop/img/header.jpg);
+    background: transparent;
+}
+
+.shopname{
+    float: left;
+    position: absolute;
+    left: 250px;
+    font-family: comicCat;
+    font-size: 80px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.icons-social{
+    float: right;
+    position: absolute;
+    top: 30px;
+    left: 750px;
+}
+
+.icons-social li{
+    display: inline-block;
+}
+
+.icons-social li img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.rotate {
+    transform: rotate(1deg);
+}
+
+/* END БЛОК HEADER */
+
+/* БЛОК МЕНЮ */
+
+.menu-burger {
+    display: inline-block;
+    position: relative;
+
+}
+
+ 
+.menu-bar {
+    float: left;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+
+}
+
+.menu-text {
+    font-size: 35px;
+    overflow: hidden;
+    font-family: comicCat;
+    height: 33px;
+    float: left
+}
+
+.change.menu-text{
+    display: none;
+}
+
+.menu-item {
+    height: 34px;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    float: left;
+}
+
+.change.menu-item{
+    display: block;
+}
+
+.menu-item li a:hover{
+    text-decoration: underline;
+}
+
+.menu-item, .menu_catalog {
+    list-style-type: none;
+    font-family: comicCat;
+    overflow: hidden;
+    font-size: 35px;
+}
+
+.menu-item li{
+    display: inline-block;
+    
+}
+
+.menu-item li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu_catalog {
+    display: block;
+    float: right;
+    margin: 50px;
+}
+
+/* ОКОНЧАНИЕ БЛОКА МЕНЮ*/
+
+/* GIF на старте */
+.spin-gif{
+    float: right;
+}
+/* ОКОНЧАНИЕ GIF на старте */
+
+
+
+h3, h4{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    margin-bottom: 0px;
+}
+
+.short_describe{
+    color: #707070;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.full_describe{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+input, textarea{
+    width: 200px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(33, 45, 206);
+    border-radius: 3%;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+.menu li a:hover{
+    color: tomato;
+}
+
+
+
+.logo{
+    float:left;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.logotype {
+    height: 92px;
+}
+
+#email:focus {
+    background-color: yellow;
+    color: violet;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+}
+
+h4, table{
+    clear: both;
+}
+
+.describe-and-img{
+    overflow: hidden;
+
+}
+
+.full_describe_img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    float: left;
+}
+
+.full_describe_img:hover{
+    border: none;
+    margin: 3px
+}
+
+
+.short_describe{
+    overflow: hidden;
+}
+
+.price{
+    float: left;
+}
+
+.buy{
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.catalog {
+    overflow: hidden;
+}
+
+.product{
+    width: 200px;
+    height: 400px;
+    float: left;
+}
+
+.product:not(:nth-child(4n)){
+    margin-right: 50px;
+}
+
+.product img{
+    width: 200px;
+    height: 200px;
+}
+
+.product-name {
+    width: 200px;
+    height: 60px;
+}
+
+.flex-container {
+    height: 500px;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    clear: both;
+}
+
+.flex-item {
+    height: 300px;
+    width: 300px;
+    border: 2px solid;
+}
+
+
+.footer{
+    height: 130px;
+    text-align: center;
+    position: relative;
+}
+
+.payment-possible{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 325px;
+}
+
+.time {
+    float: right;
+    font-size: 34px;
+    font-family: comicCat;
+    margin-left: 80px;
+}

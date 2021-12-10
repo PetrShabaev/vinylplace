@@ -1,0 +1,47 @@
+{% extends '../base_templates/base.html' %}
+
+{% load static%}
+
+    {% block content%}
+        <div class="describe-and-img">
+            <div class="full_describe_img">
+                <a href='{% static "img/products/pink_floyd_dark_side.jpg"%}' target="_blank">
+                    <img src='{% static "img/products/pink_floyd_dark_side.jpg"%}' alt="pink_floyd" width="200">
+                </a>
+            </div>
+            <div class="short_describe">
+                <h3>Краткое описание товара</h3>
+                <p>Pink Floyd - The Dark Side Of The Moon</p>
+                <div class="price">
+                    <span>Цена 3000 руб</span>
+                </div>
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+
+        <h4>Характеристики</h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Характеристика 1</td>
+                    <td>Описание</td>
+                </tr>
+                <tr>
+                    <td>Характеристика 2</td>
+                    <td>Описание</td>
+                </tr>
+                <tr>
+                    <td>Характеристика 3</td>
+                    <td>Описание</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Подробное описание товара</h4>
+        <p class="full_describe">
+            Label: Pink Floyd Records – PFRLP8, Pink Floyd Records – 5099902987613<br>
+            Format: Vinyl, LP, Album, Reissue, Remastered, Stereo, Gatefold, 180 Gram<br>
+            Country: Europe<br>
+            Released: 04 Nov 2016<br>
+            Genre: Rock<br>
+            Style: Prog Rock, Psychedelic Rock, Classic Rock</p>
+{% endblock content%}

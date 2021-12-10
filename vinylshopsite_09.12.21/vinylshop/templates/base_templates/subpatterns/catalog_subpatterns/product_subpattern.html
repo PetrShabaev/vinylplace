@@ -1,0 +1,13 @@
+{% load static %}
+
+{% for product in products %}
+    <div class="product">
+        <img src='{% static product.photo_link %}' alt="white stripes" width="200">
+                <div class="product-name">{{product.product_name}}</div>
+                <h4>Описание товара</h4>
+                <div>{{product.describe}}</div>
+                <div>
+                    <a href="{% url product.product_page %}">Подробные характеристики</a>
+                </div>
+            </div>
+{% endfor %}

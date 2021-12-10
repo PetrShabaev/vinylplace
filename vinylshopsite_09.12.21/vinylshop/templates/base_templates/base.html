@@ -1,0 +1,19 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+{% include 'base_templates/subpatterns/base_subpatterns/head_subpattern.html'%}
+<body>
+    <div class="container">
+        {% include 'base_templates/subpatterns/base_subpatterns/header_subpattern.html'%}
+        {% include 'base_templates/subpatterns/base_subpatterns/main_menu_subpattern.html'%}
+        <hr>
+        <h2>{{page_title|title}}</h2>
+        {% block content%}
+        {% endblock content%}
+        <hr>
+        {% include 'base_templates/subpatterns/base_subpatterns/footer_subpattern.html' %}
+    </div>
+<script src='{% static "app.js" %}'></script>
+</body>
+</html>

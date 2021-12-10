@@ -1,0 +1,49 @@
+{% extends '../base_templates/base.html' %}
+
+{% load static%}
+
+    {% block content%}
+        <div class="describe-and-img">
+            <div class="full_describe_img">
+                <a href='{% static "img/products/led_zeppelin.jpg"%}' target="_blank">
+                    <img src='{% static "img/products/led_zeppelin.jpg"%}' alt="led zeppelin" width="200">
+                </a>
+            </div>
+            <div class="short_describe">
+                <h3>Краткое описание товара</h3>
+                <p class="short_describe">Винил Led Zeppelin</p>
+                <div class="price">
+                    <span>Цена 4000 руб</span>
+                </div>
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+
+
+        <h4>Характеристики</h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Характеристика 1</td>
+                    <td>Описание</td>
+                </tr>
+                <tr>
+                    <td>Характеристика 2</td>
+                    <td>Описание</td>
+                </tr>
+                <tr>
+                    <td>Характеристика 3</td>
+                    <td>Описание</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Подробное описание товара</h4>
+        <p class="full_describe">
+            Label: Atlantic – 8122796641, Atlantic – R1 535224 <br>
+            Format: Vinyl, LP, Album, Reissue, Remastered, Stereo, 180g <br>
+            Country: Europe <br>
+            Released: 2020 <br>
+            Genre: Rock <br>
+            Style: Blues Rock, Hard Rock
+        </p>
+{% endblock content%}

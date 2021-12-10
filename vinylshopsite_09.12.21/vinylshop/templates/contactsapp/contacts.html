@@ -1,0 +1,21 @@
+{% extends '../base_templates/base.html' %}
+
+ {% block content%}
+        <fieldset>
+            <legend>Свяжитесь с нами</legend>
+            <form action="">
+                <input id="name" type="text" placeholder="Иван"><br>
+                <input id="email" type="text" placeholder="chubakka@mail.ru"><br>
+                <input id="theme" type="text" placeholder="Ваш вопрос"><br>
+                <label for="letterBody">Суть вопроса</label><br>
+                <textarea name="" id="letterBody"></textarea><br>
+                <input type="button" value="Отправить">
+            </form>
+        </fieldset>
+        <h2>Адрес</h2>
+        <p>
+            <b>Телефон:</b>+79999999999<br>
+            <b>Город:</b>Санкт-Петербург<br>
+            <b>E-mail:</b>vinylshop@rambler.ru<br>
+        </p>
+ {% endblock content%}

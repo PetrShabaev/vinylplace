@@ -1,0 +1,49 @@
+{% extends '../base_templates/base.html' %}
+
+{% load static%}
+
+    {% block content%}
+
+        <div class="describe-and-img">
+            <div class="full_describe_img">
+                <a href="{%static 'img/products/white_stripes.jpg'%}" target="_blank">
+                    <img src="{%static 'img/products/white_stripes.jpg'%}" alt="white stripes" width="200">
+                </a>
+            </div>
+            <div class="short_describe">
+                <h3>Краткое описание товара</h3>
+                <p>The White Stripes – My Sister Thanks You And I Thank You The White Stripes Greatest Hits</p>
+                <div class="price">
+                    <span>Цена 4000 руб</span>
+                </div>
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+
+        <h4>Характеристики</h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Характеристика 1</td>
+                    <td>Описание</td>
+                </tr>
+                <tr>
+                    <td>Характеристика 2</td>
+                    <td>Описание</td>
+                </tr>
+                <tr>
+                    <td>Характеристика 3</td>
+                    <td>Описание</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Подробное описание товара</h4>
+        <p class="full_describe">
+            Label: Third Man Records – TMR-700<br>
+            Format: 2 x Vinyl, LP, Compilation, Stereo<br>
+            Country: USA & Europe<br>
+            Released: Feb 12, 2021<br>
+            Genre: Rock, Blues<br>
+            Style: Garage Rock</p>
+
+{% endblock content%}

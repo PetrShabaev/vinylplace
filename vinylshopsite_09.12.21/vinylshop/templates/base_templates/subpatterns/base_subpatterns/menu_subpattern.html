@@ -1,0 +1,9 @@
+<ul class="menu-item">
+                {% for site_part in site_links%}
+                <li>
+                    <a href= "{% url site_part.link %}">
+                        {{site_part.name}}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
